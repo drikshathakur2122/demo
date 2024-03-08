@@ -1,13 +1,13 @@
 import tkinter as tk
 
 def button_click(value):
-    current= display.get()
+    current = display.get()
     display.delete(0, tk.END)
     display.insert(tk.END, current + value)
 
 def calculate():
     try:
-        result= eval(display.get())
+        result = eval(display.get())
         display.delete(0, tk.END)
         display.insert(tk.END, str(result))
     except Exception as e:
